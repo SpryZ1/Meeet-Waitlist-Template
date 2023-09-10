@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --clr-primary: #32f5c8;
+    --clr-secondary: #a9bdc6;
+
+    /* Fonts */
+    --ff-primary: 'Sen', sans-serif;
+    --ff-secondary: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background-color: #013243;
+    max-width: 1440px;
+}
+
+.container {
+    padding: 2rem 4rem;
+    width: 1440px;
+}
+
+.container .logo {
+    margin-bottom: 2rem;
+}
+
+.container header h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: var(--clr-primary);
+    max-width: 20ch;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+p {
+    color: var(--clr-secondary);
+    font-family: var(--ff-secondary);
+}
+
+.container header .lead {
+    max-width: 40ch;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: .7rem;
+}
+
+.container .btn {
+    color: #013243;
+    background-color: var(--clr-primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--ff-secondary);
+    padding: .8rem;
+    border-radius: .3rem;
+    font-size: .8rem;
+}
+
+.container .follow-us {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: .7rem;
+}
+
+.container .follow-us a,
+.container .follow-us img {
+    width: 25px;
+    height: 25px;
+}
+
+.container .follow-us p {
+    font-size: .8rem;
+}
+
+.imgs .img {
+    position: absolute;
+    scale: 70%;
+    z-index: -1;
+}
+
+.imgs .img1 {
+    top: 11.5rem;
+    left: 29rem;
+    width: 80px;
+}
+
+.imgs .img2 {
+    top: 2.5rem;
+    left: 28rem;
+    width: 110px;
+}
+
+.imgs .img3 {
+    top: 4rem;
+    left: .6rem;
+    width: 90px;
+}
+
+.imgs .img4 {
+    top: 16rem;
+    left: 23rem;
+    width: 180px;
+}
+
+.imgs .img5 {
+    top: 4rem;
+    left: 23.5rem;
+    width: 80px;
+}
+
+.imgs .img6 {
+    top: 12em;
+    left: 18rem;
+    width: 90px;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 2rem;
+    }
+
+    .container .logo {
+        margin-bottom: 10rem;
+    }
+
+    .container header h1 {
+        font-size: 6rem;
+    }
+
+    .container header .lead {
+        font-size: 1.4rem;
+    }
+
+    .container .btn {
+        font-size: 1.4rem;
+        padding: 1.2rem;
+    }
+
+    .container .follow-us {
+        margin-top: 8rem;
+    }
+
+    .imgs .img1 {
+        top: 15rem;
+        left: 36rem;
+        width: 120px;
+    }
+
+    .imgs .img2 {
+        top: 1rem;
+        left: 35rem;
+        width: 160px;
+    }
+
+    .imgs .img3 {
+        top: 4rem;
+        left: 2rem;
+        width: 140px;
+    }
+
+    .imgs .img4 {
+        top: 33rem;
+        left: 25rem;
+        width: 250px;
+    }
+
+    .imgs .img5 {
+        top: 10rem;
+        left: 30rem;
+        width: 120px;
+    }
+
+    .imgs .img6 {
+        top: 22rem;
+        left: 31rem;
+        width: 150px;
+    }
+
+    .container .follow-us {
+        display: flex;
+        align-items: center;
+        margin-top: 10%;
+        gap: .7rem;
+    }
+
+    .container .follow-us a,
+    .container .follow-us img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .container .follow-us p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 2rem 2rem;
+    }
+
+    .container .logo {
+        margin-bottom: 10rem;
+    }
+
+    .container header h1 {
+        font-size: 6rem;
+    }
+
+    .container header .lead {
+        font-size: 2rem;
+        max-width: 25ch;
+        margin-bottom: 4rem;
+    }
+
+    .container .btn {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .container .follow-us {
+        margin-top: 8rem;
+    }
+
+    .imgs .img1 {
+        display: none;
+    }
+
+    .imgs .img2 {
+        top: 2rem;
+        left: 25rem;
+        width: 300px;
+    }
+
+    .imgs .img3 {
+        top: 2rem;
+        left: 7rem;
+        width: 250px;
+    }
+
+    .imgs .img4 {
+        display: none;
+    }
+
+    .imgs .img5 {
+        display: none;
+    }
+
+    .imgs .img6 {
+        top: 40rem;
+        left: 16rem;
+        width: 400px;
+    }
+
+    .container .follow-us {
+        display: flex;
+        align-items: center;
+        margin-top: 63%;
+        gap: .7rem;
+    }
+
+    .container .follow-us a,
+    .container .follow-us img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container .follow-us p {
+        font-size: 2rem;
+    }
+}
